@@ -10,19 +10,21 @@ import CreateExercise from "./components/CreateExercise"
 import ExerciseList from "./components/ExercisesList"
 import EditExercise from "./components/EditExercises"
 import CreateUser from "./components/CreateUser"
+import NavBar from "./components/NavBar"
+import Main from "./components/Main"
+import NavBarTwo from "./components/NavBarTwo"
+import Cards from "./components/Cards"
+
 
 
 function App() {
   return (
-    <Router>
-      <br/>
-      <nav>
-      <Route Path="/" exact component={ExerciseList} />
-      <Route Path="/edit/id"component={EditExercise} />
-      <Route Path="/create" component={CreateExercise} />
-      <Route Path="/user" component={CreateUser} />
-      </nav>
-    </Router>
+   <div>
+  <NavBar />
+  <NavBarTwo/>
+  <Main/>
+  <Cards />
+   </div>
   );
 }
 

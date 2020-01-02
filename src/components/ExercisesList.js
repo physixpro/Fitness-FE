@@ -53,14 +53,6 @@ exerciseList(){
             <div>
                 <h3>Logged Exercises</h3>
                 <table className="table">
-                    <header className="thead-light">
-                        <ul>
-                            <li>Username</li>
-                            <li>Description</li>
-                            <li>Duration</li>
-                            <li>Actions</li>
-                        </ul>
-                    </header>
                     <body>
                         {this.exerciseList()}
                     </body>
