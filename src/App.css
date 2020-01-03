@@ -13,7 +13,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1 40px;
   grid-gap:6px;
-  background-color: black;
+  background-color:rgba(53, 136, 184, 0.933);
  
 }
 
@@ -30,12 +30,12 @@ text-align: center;
 
 
 .videoTag{
-  position:fixed;
+  position: relative;
   z-index: -1;
   width: 100%;
   height: auto;
- display: grid;
- grid-template-columns: 100px auto 100px;
+
+ 
 
 }
 
@@ -58,7 +58,7 @@ text-align: center;
 }
 
 .link-4:hover{
- background-color: black;
+ background-color: rgb(72, 103, 160);
   border: none;
   color: white;
   padding: 16px 32px;
@@ -68,4 +68,7 @@ text-align: center;
   transition: 0.3s;
   display: inline-block;
   
+}
+
+.cards{
 }

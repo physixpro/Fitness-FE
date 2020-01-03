@@ -1,51 +1,42 @@
 import React, {Component} from 'react';
-import run from 'run.jpg'
+import test from "./test.jpg";
+import testone from "./testone.jpg"
+
+
 
 class Cards extends Component {
 
     constructor(){
         super();
         this.state = {
-            imgSrc:'background-image: url(smile.jpg)'
-        }
+            imgSrc:require('./testone.jpg')
+        };
         this.handleMouseOver = this.handleMouseOver.bind(this);
         this.handleMouseOut = this.handleMouseOut.bind(this);
     }
         
     handleMouseOver(){
         this.setState({
-            imgSrc: 'http://demo.sodhanalibrary.com/images/twitter_brown.png'
+            imgSrc: require('./test.jpg')
         });
     }
 
     handleMouseOut(){
         this.setState({
-            imgSrc: 'http://demo.sodhanalibrary.com/images/twitter_blue.png'
+            imgSrc: require('./testone.jpg')
         });
     }
     
-}
 
-render () {
-    return(
-        <div>
-            <img onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} src={this.state.imgSrc}/>
+
+render(){
+return(
+        <div className="cards">
+<img onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} src={this.state.imgSrc}/>
+
         </div>
-    );
-
-
-}
-  
-
-
-
-
-Cards.propTypes = {
+    )
+};
 
 }
-
-Cards.defaultProps = {
-    
-}
-
 export default Cards;
