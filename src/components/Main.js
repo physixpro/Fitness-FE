@@ -6,6 +6,7 @@ class Main extends Component {
     return (
       <div>
         <video className='videoTag' autoPlay loop muted>
+       
     <source src={run} type='video/mp4' />
 </video>
 
