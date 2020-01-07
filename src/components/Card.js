@@ -8,38 +8,42 @@ import yogacouple from "./yogacouple.jpg";
 import Img from 'react-image'
 
 class Card extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      imgSrc: this.props.imagePathIn
-    };
-    this.handleMouseOver = this.handleMouseOver.bind(this);
-    this.handleMouseOut = this.handleMouseOut.bind(this);
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     imgSrc: this.props.imagePathIn
+  //   };
+  //   this.handleMouseOver = this.handleMouseOver.bind(this);
+  //   this.handleMouseOut = this.handleMouseOut.bind(this);
+  // }
 
-  handleMouseOver() {
-    this.setState({
-      imgSrc: this.props.imagePathOut
-    });
-    console.log("Mouse over fired");
-  }
+  // handleMouseOver() {
+  //   this.setState({
+  //     imgSrc: this.props.imagePathOut
+  //   });
+  //   console.log("Mouse over fired");
+  // }
 
-  handleMouseOut() {
-    this.setState({
-      imgSrc: this.props.imagePathIn
-    });
-    console.log("Mouse out fired");
-  }
+  // handleMouseOut() {
+  //   this.setState({
+  //     imgSrc: this.props.imagePathIn
+  //   });
+  //   console.log("Mouse out fired");
+  // }
 
   render() {
     console.log("props", this.props);
     return (
       <div className="cards">
-        <Img
+        <Img id="test"
           onMouseOver={this.handleMouseOver}
           onMouseOut={this.handleMouseOut}
           src={require(`${this.state.imgSrc}`)}
         />
+        <div>
+  <h1>{this.props.heading}</h1>
+  <p>{this.props.info}</p>
+  </div>
       </div>
     );
   }

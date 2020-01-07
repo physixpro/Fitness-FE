@@ -6,19 +6,25 @@ class Banner extends Component {
   render() {
     return (
       <div className="banner">
-        <img id="imgone" src={comfort} />
-        <div id="info">
-          <h1>WORLD CLASS YOGA INSTRUCTION</h1>
+      <div>
+        <img id="imgOne" src={comfort} />
+       </div>
+       <div id="sectionOne">
+  <h1>{this.props.value}</h1>
           
           <button>BOOK NOW</button>
-        </div>
+          </div>
+
+      
+            <div id="imgTwo">
+        <img src={comfort} />
+       </div>
+          <div id="sectionTwo">
+           <h1>{this.props.info}</h1> 
+          <button>BOOK NOW</button>
+          </div>
+          
         
-        <img id="imgtwo" src={comforttwo} width='1000'/>
-        <div id="infotwo">
-        <h1>WORLD CLASS YOGA INSTRUCTION</h1>
-          
-          <button>BOOK NOW</button>
-        </div>
         
       </div>
     );

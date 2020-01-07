@@ -36,12 +36,13 @@ function App() {
    <div>
   <NavBar />
   <NavBarTwo/>
-  <Main/>
+<Main />
   <InfoSection />
-  <Card imagePathIn="./relax.jpg" imagePathOut="./relaxtwo.jpg" />
-  <Card imagePathIn="./bedroomone.jpg" imagePathOut="./bedroomtwo.jpg"/>
-  
-  
+  {/* <Card imagePathIn="./relax.jpg" imagePathOut="./relaxtwo.jpg" heading="See our Spas" info="Get your feet wet and hands dirty...The right way, with our bubble baths and mud pedicures. Treat yourself,live.. lavishly"/>
+  <Card imagePathIn="./bedroomone.jpg" imagePathOut="./bedroomtwo.jpg" heading="See our Spas" info="Get your feet wet and hands dirty...The right way, with our bubble baths and mud pedicures. Treat yourself,live.. lavishly"/>
+  <Card imagePathIn="./bedroomone.jpg" imagePathOut="./bedroomtwo.jpg" heading="See our Spas" info="Get your feet wet and hands dirty...The right way, with our bubble baths and mud pedicures. Treat yourself,live.. lavishly"/> */}
+  <Banner value="Relax And Enjoy Yoga Classes Taught By Our Expert Instructor"  info="Enjoy Nights By a Bon Fire on the Beach Or Mornings On A Tropical Hike And So Much More!"/>
+  <Banner value="oiang;ldiang'daonig"/>
   
    </div>
   );

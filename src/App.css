@@ -1,6 +1,7 @@
 *{
   padding:0;
   margin:0;
+  background-color:
 }
 
 
@@ -72,20 +73,8 @@ text-align: center;
   
 }
 
-.banner{
-  display:grid;
-  grid-template-columns: repeat(10,100px);
-  
-  overflow-x: hidden;
-}
 
-#imgone{
-  z-index: 1000;
-}
 
-#imgtwo{
-  z-index: -2000;
-}
 
 #info{
   z-index:2000;
@@ -99,12 +88,46 @@ text-align: center;
 }
 
 .cards{
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap:3px;
-  
+  display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
 }
 
-#info-grid{
-  background-image: url(components/interior.jpg);
+
+.banner{
+  height:100%;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows:repeat(2,auto);
+   grid-gap:20px;
+   grid-template-areas: "f o"
+                         "t s";
+}
+
+
+#imgOne{
+  z-index: 1000;
+grid-area:f;
+}
+
+#imgTwo{
+  z-index: -2000;
+  grid-area:s;
+}
+
+#sectionOne{
+  grid-area:o;
+}
+
+#sectionTwo{
+  grid-area:t;
+}
+
+
+#test{
+  
+}
+#test:hover{
+  color: #f2f2f2;
+  box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
 }

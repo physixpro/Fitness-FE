@@ -1,14 +1,11 @@
 import React, { Component } from "react";
-import run from './run.mp4'
+import Background from "./Background.jpg"
 
 class Main extends Component {
   render() {
     return (
       <div>
-        <video className='videoTag' autoPlay loop muted>
-       
-    <source src={run} type='video/mp4' />
-</video>
+<img  className="videoTag" src={Background}/>
 
                 
 
