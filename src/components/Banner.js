@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import comfort from "./comfort.jpg";
-import comforttwo from "./comforttwo.jpg"
+import second from "./second.jpg"
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import sushi from "./sushi.jpg"
 
 class Banner extends Component {
   render() {
@@ -24,14 +25,14 @@ class Banner extends Component {
 
       
             <div id="imgTwo">
-        <img src={comfort} />
+        <img src={second} />
        </div>
           <div id="sectionTwo">
            <h1>{this.props.info}</h1> 
           <button>BOOK NOW</button>
           </div>
           
-        
+        <img id="sushi"src={sushi} alt='sushi' width="500" height="900"/>
         
       </div>
     );

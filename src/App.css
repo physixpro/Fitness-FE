@@ -130,13 +130,13 @@ text-align: center;
 .banner{
   height:100%;
   display:grid;
-  grid-template-columns: repeat(12,1fr);
+  grid-template-columns: repeat(3,100px auto 100px);
   grid-template-rows:repeat(2,auto);
    grid-gap:20px;
    grid-template-areas: 
                           
-                        "f o"
-                         "t s";
+                        "f f f f . . o o o o o z"
+                        "t t t t t s s s s s s z";
 }
 
 
@@ -148,16 +148,22 @@ grid-area:f;
 #imgTwo{
   z-index: -2000;
   grid-area:s;
+  grid-column-start: 8;
+  grid-column-end: 12;
 }
 
 #sectionOne{
   grid-area:o;
+  grid-column-start: 8;
 }
 
 #sectionTwo{
   grid-area:t;
 }
 
+#sushi{
+  grid-area:z;
+}
 
 
 
