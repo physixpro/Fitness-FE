@@ -19,7 +19,8 @@ import InfoSection from './components/InfoSection';
 import bedroomone from "./components/bedroomone.jpg";
 import bedroomtwo from "./components/bedroomtwo.jpg";
 import test from "./components/test.jpg";
-import BannerTwo from "./components/BannerTwo";
+import Offers from "./components/Offers";
+import Boxes from "./components/Boxes";
 
 
 //fix you images bro 
@@ -34,15 +35,18 @@ import BannerTwo from "./components/BannerTwo";
 function App() {
   return (
    <div>
-  <NavBar />
+ 
   <NavBarTwo/>
 <Main />
   <InfoSection />
+  <Boxes />
+<Offers />
   {/* <Card imagePathIn="./relax.jpg" imagePathOut="./relaxtwo.jpg" heading="See our Spas" info="Get your feet wet and hands dirty...The right way, with our bubble baths and mud pedicures. Treat yourself,live.. lavishly"/>
   <Card imagePathIn="./bedroomone.jpg" imagePathOut="./bedroomtwo.jpg" heading="See our Spas" info="Get your feet wet and hands dirty...The right way, with our bubble baths and mud pedicures. Treat yourself,live.. lavishly"/>
   <Card imagePathIn="./bedroomone.jpg" imagePathOut="./bedroomtwo.jpg" heading="See our Spas" info="Get your feet wet and hands dirty...The right way, with our bubble baths and mud pedicures. Treat yourself,live.. lavishly"/> */}
   <Banner value="Relax And Enjoy Yoga Classes Taught By Our Expert Instructor"  info="Enjoy Nights By a Bon Fire on the Beach Or Mornings On A Tropical Hike And So Much More!"/>
-  <Banner value="oiang;ldiang'daonig"/>
+  <CreateUser />
+  <CreateExercise />
   
    </div>
   );

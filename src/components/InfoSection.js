@@ -15,7 +15,7 @@ class InfoSection extends Component{
             <div className="info-grid">
                
                 <h1 id="header-one">
-                    A delightfuly fresh and unique experience
+                    A DELIGHTLY FRESH AND UNIQUE EXPERIENCE
                 </h1>
                 <p id="paragraph-one">
                     Stunning signature dining with breathtaking views of the Caribbean Sea. An inegmatic experience to top them all and at prices you can live with
