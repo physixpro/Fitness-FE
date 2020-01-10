@@ -41,11 +41,11 @@ onSubmit(e) {
 
     render(){
         return(
-            <div>
-               <h3>Create New User</h3>
+            <div className="form-grid">
+               <h3 id="form-header">Here At Escondida We Are constantly Working Hard To Make Your Trip More Enjoyable, Feel Free To Take Our Extremely Short Questionnaire </h3>
                <form onSubmit = {this.onSubmit}>
                    <div className = "form-group">
-                       <label>Username: </label>
+                       <label>What's Your Name? </label>
                        <input type="text"
                        required
                        className="form-control"
@@ -54,9 +54,13 @@ onSubmit(e) {
                        />
                    </div>
                    <div className = "form-group">
-                       <input type = "submit" value = "Create User" className= "btn btn-primary" />
+                       <input type = "submit" value = "Submit Name" className= "btn btn-primary" />
                    </div>
                    </form>
+                   
+
+
+
             </div>
         )
     }

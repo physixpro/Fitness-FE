@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import couple from "./couple.jpg"
 
 class CreateExercise extends Component{
 
@@ -72,27 +73,13 @@ this.onSubmit = this.onSubmit.bind(this);
     render(){
         return(
             <div>
-               <h3>Create New Exercise Log</h3>
+               
                <form onSubmit={this.onSubmit}>
+                  
                    <div className="form-group">
-                       <label>Username: </label>
-                       <select ref="userInput"
-                       required
-                       className="form-control"
-                       value={this.state.username}
-                       onChange={this.onChangeUsername}>
-                         {
-                             this.state.users.map(function(user) {
-                                 return <option
-                                 key={user}
-                             value={user}>{user}
-                             </option>
-                             })
-                         }  
-                       </select>
-                   </div>
-                   <div className="form-group">
-                       <label>Description: </label>
+                   <img id="couple" src={couple} alt="couple walking on beach" width="1269" height="700"/>
+                       <h1 id="form-header">We Would Like To Know A little About Your Vacation</h1>
+                       <label id="questionOne">Is This A Family Vacation Or Solo Trip? </label>
                        <input type="text"
                        required
                        className="form-control"
@@ -101,18 +88,23 @@ this.onSubmit = this.onSubmit.bind(this);
                        />
                    </div>
                    <div className="form-group">
-                       <label>Duration (in minutes)</label>
+                       
+                       <label id="questionTwo">How Many Days Are You Staying For?</label>
                        <input 
                        type="text"
-                       className="form-control"
+                       className="form-controller"
                        value={this.state.duration}
                        onChange={this.onChangeDuration}
                        />
                    </div>
                    <div className="form-group">
-                       <input type="submit" value="Create Exercise Log" className="btn btn-primary"/>
+                       <input type="submit" value="Submit Details" className="btn"/>
                    </div>
+
+                  
                </form>
+
+              
             </div>
         )
     }
