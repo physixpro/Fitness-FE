@@ -21,6 +21,8 @@ import bedroomtwo from "./components/bedroomtwo.jpg";
 import test from "./components/test.jpg";
 import Offers from "./components/Offers";
 import Boxes from "./components/Boxes";
+import SimpleSlider from "./components/SimpleSlider"
+
 
 
 //fix you images bro 
@@ -47,6 +49,8 @@ function App() {
   <Banner value="Enjoy Cross Cultural Cuisine From Every Continent, Here at Escondida We Cater To You." info="World Class Yoga and Pilates Instruction Taught By Jessica Chen, Awarded America's Most Popular pt"/>
 
   <CreateExercise />
+
+  <SimpleSlider />
   
    </div>
   );

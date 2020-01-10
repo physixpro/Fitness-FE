@@ -361,3 +361,10 @@ grid-area:t;
   grid-area:i;
   
 }
+
+.slide{
+  display:grid;
+  grid-template-rows: repeat(12,1fr);
+  background-color: ;
+}
+

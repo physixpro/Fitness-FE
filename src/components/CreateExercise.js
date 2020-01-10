@@ -77,7 +77,7 @@ this.onSubmit = this.onSubmit.bind(this);
                <form onSubmit={this.onSubmit}>
                   
                    <div className="form-group">
-                   <img id="couple" src={couple} alt="couple walking on beach" width="1269" height="700"/>
+                   <img id="couple" src={couple} alt="couple walking on beach" width="1269" height="560"/>
                        <h1 id="form-header">We Would Like To Know A little About Your Vacation</h1>
                        <label id="questionOne">Is This A Family Vacation Or Solo Trip? </label>
                        <input type="text"
