@@ -24,6 +24,7 @@ import Boxes from "./components/Boxes";
 import SimpleSlider from "./components/SimpleSlider";
 import SocialMedia from './components/SocialMedia';
 import SocialMediaTwo from './components/SocialMediaTwo';
+import Footer from "./components/Footer";
 
 
 
@@ -58,6 +59,8 @@ function App() {
   <SocialMediaTwo join = "JOIN THE CONVERSATION"/>
 
   <SimpleSlider />
+
+  <Footer />
   
    </div>
   );
