@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { SocialIcon } from 'react-social-icons';
 import footerImg from './footerImg.jpg';
 import lastIcon from './lastIcon.jpg';
-import file from './file.png';
+import file from './file.jpg';
 
 
 class Footer extends Component {
@@ -45,7 +45,6 @@ class Footer extends Component {
         </div>
          <p id="email-p">EMAIL&nbsp;SIGN&nbsp;UP</p>
         <SocialIcon network="email" id='mail'style={{ height: 30, width: 30 }} />
-        <img src={file} alt='site icon' width='400' height='400'/>
         </div>
        
         
