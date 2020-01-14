@@ -8,28 +8,28 @@ import yogacouple from "./yogacouple.jpg";
 import Img from 'react-image'
 
 class Card extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     imgSrc: this.props.imagePathIn
-  //   };
-  //   this.handleMouseOver = this.handleMouseOver.bind(this);
-  //   this.handleMouseOut = this.handleMouseOut.bind(this);
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      imgSrc: this.props.imagePathIn
+    };
+    this.handleMouseOver = this.handleMouseOver.bind(this);
+    this.handleMouseOut = this.handleMouseOut.bind(this);
+  }
 
-  // handleMouseOver() {
-  //   this.setState({
-  //     imgSrc: this.props.imagePathOut
-  //   });
-  //   console.log("Mouse over fired");
-  // }
+  handleMouseOver() {
+    this.setState({
+      imgSrc: this.props.imagePathOut
+    });
+    console.log("Mouse over fired");
+  }
 
-  // handleMouseOut() {
-  //   this.setState({
-  //     imgSrc: this.props.imagePathIn
-  //   });
-  //   console.log("Mouse out fired");
-  // }
+  handleMouseOut() {
+    this.setState({
+      imgSrc: this.props.imagePathIn
+    });
+    console.log("Mouse out fired");
+  }
 
   render() {
     console.log("props", this.props);

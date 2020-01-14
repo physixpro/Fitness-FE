@@ -10,8 +10,7 @@ class NavBarTwo extends Component{
   <a class="link-4" href="#">SPEAKERS</a>
   <a class="link-4" href="#">STORIES</a>
   <a class="link-4" href="#">SUPPORT</a>
-  <a class="link-4" href="#">EARPHONES</a>
-  <a class="link-4" href="#">SPEAKERS</a>
+  
                 </nav>
 
             </div>

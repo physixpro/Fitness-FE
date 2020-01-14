@@ -17,7 +17,6 @@ import Card from "./components/Card"
 import Banner from "./components/Banner"
 import InfoSection from './components/InfoSection';
 import bedroomone from "./components/bedroomone.jpg";
-import bedroomtwo from "./components/bedroomtwo.jpg";
 import test from "./components/test.jpg";
 import Offers from "./components/Offers";
 import Boxes from "./components/Boxes";
@@ -25,6 +24,8 @@ import SimpleSlider from "./components/SimpleSlider";
 import SocialMedia from './components/SocialMedia';
 import SocialMediaTwo from './components/SocialMediaTwo';
 import Footer from "./components/Footer";
+import SecondCard from "./components/SecondCard";
+import ThirdCard from "./components/ThirdCard";
 
 
 
@@ -45,7 +46,12 @@ function App() {
   <NavBarTwo/>
 <Main />
   <InfoSection />
+ 
   <Boxes />
+
+  <SecondCard />
+
+  <ThirdCard />
 <Offers />
   {/* <Card imagePathIn="./relax.jpg" imagePathOut="./relaxtwo.jpg" heading="See our Spas" info="Get your feet wet and hands dirty...The right way, with our bubble baths and mud pedicures. Treat yourself,live.. lavishly"/>
   <Card imagePathIn="./bedroomone.jpg" imagePathOut="./bedroomtwo.jpg" heading="See our Spas" info="Get your feet wet and hands dirty...The right way, with our bubble baths and mud pedicures. Treat yourself,live.. lavishly"/>
@@ -60,7 +66,10 @@ function App() {
 
   <SimpleSlider />
 
+
+
   <Footer />
+
   
    </div>
   );

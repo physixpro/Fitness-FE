@@ -3,7 +3,7 @@ import comfort from "./comfort.jpg";
 import second from "./second.jpg"
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
-import sushi from "./sushi.jpg"
+import bigsushi from "./bigsushi.jpg"
 
 class Banner extends Component {
   render() {
@@ -29,7 +29,7 @@ class Banner extends Component {
           
             <div id="imgTwo">
             <ScrollAnimation animateIn="fadeInUp">
-        <img src={comfort} />
+        <img src={comfort} id="imgTwoIn" />
         </ScrollAnimation>
        </div>
           <div id="sectionTwo">
@@ -37,7 +37,7 @@ class Banner extends Component {
           
           </div>
           
-        <img id="sushi"src={sushi} alt='sushi' width="500" height="900"/>
+        <img id="sushi"src={bigsushi} alt='sushi' width="650" height="889"/>
         
       </div>
     );

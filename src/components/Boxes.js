@@ -1,6 +1,12 @@
 import React, {Component} from 'react';
-import relax from "./relax.jpg";
-import interior from "./interior.jpg"
+import aOne from './aOne.jpg';
+import aOneHover from './aOneHover.jpg';
+import aTwo from './aTwo.jpg';
+import aTwoHover from './aTwoHover.jpg';
+import aThree from './aThree.jpg';
+import aThreeHover from './aThreeHover.jpg';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class Boxes extends Component{
 
@@ -8,7 +14,7 @@ class Boxes extends Component{
   constructor(){
     super();
     this.state = {
-      box : <img src={relax}/>
+      box : <img src={aOne} width='600'/>
     };
     this.handleMouseOver = this.handleMouseOver.bind(this);
     this.handleMouseOut = this.handleMouseOut.bind(this);
@@ -16,7 +22,7 @@ class Boxes extends Component{
 
   handleMouseOver(){
     this.setState({
-      box: <img src={interior} 
+      box: <img src={aOneHover}width='600' 
       />
     });
     console.log("mouse over fired");
@@ -25,19 +31,22 @@ class Boxes extends Component{
 
   handleMouseOut(){
     this.setState({
-      box:<img src={relax}/>
+      box:<img src={aOne} width='600'/>
     });
     console.log("mouse out fired");
 
   }
   render(){
     return(
-      <div className="boxes-grid">
-<div className="box-1" onMouseOver={this.handleMouseOver} onMouseOut={this.handlMouseOut}> {this.state.box}  </div>
-<div className="box-1"> {this.state.box}  </div>
-<div className="box-1" > {this.state.box}</div>
+      <ScrollAnimation animateIn="fadeIn">
+
+<div className="boxes-grid">
+<div className="box-1" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}> {this.state.box}  </div>
+
 
       </div>
+      </ScrollAnimation>
+    
     )
   }
 }

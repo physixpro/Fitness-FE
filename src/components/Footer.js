@@ -11,14 +11,14 @@ class Footer extends Component {
     return (
       <div>
         <div id="section-1">
-        
-            <img id="footer-img"src={footerImg} alt='logo'/>
-            <div id="icons">
-            <SocialIcon url="http://facebook.com" />&nbsp;&nbsp;&nbsp;&nbsp;
-            <SocialIcon url="http://twitter.com" />&nbsp;&nbsp;&nbsp;&nbsp;
-            <SocialIcon url="http://youtube.com" />&nbsp;&nbsp;&nbsp;&nbsp;
-            <SocialIcon url="http://instagram.com" />
+        <div id="icons">
+            <SocialIcon url="http://facebook.com" id="dot-one"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <SocialIcon url="http://twitter.com" id="dot-two"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <SocialIcon url="http://youtube.com" id="dot-three"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <SocialIcon url="http://instagram.com" id="dot-four"/>
             </div>
+            <img id="footer-img"src={footerImg} alt='logo'/>
+          
             <div id="infoSection">
             <h5 id="info-1">200 PALENCIA RESORT WAY</h5>
             <h5 id="info-2">BUCARA, INDO</h5>
@@ -45,11 +45,9 @@ class Footer extends Component {
         </div>
          <p id="email-p">EMAIL&nbsp;SIGN&nbsp;UP</p>
         <SocialIcon network="email" id='mail'style={{ height: 30, width: 30 }} />
+        
         </div>
        
-        
-        <div id="section-4"></div>
-        <div id="section-5"></div>
       </div>
     );
   }

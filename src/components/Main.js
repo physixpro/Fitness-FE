@@ -19,7 +19,7 @@ class Main extends Component {
 <h1 className="title">Awarded best get away of 2020
 "Resort Official Magazine"</h1>
 
-<div className="down-arrow"></div>
+
 
 </div>
 
