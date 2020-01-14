@@ -6,10 +6,10 @@ class NavBarTwo extends Component{
             <div class="secondNavbar">
                 <nav id="nav-4">
                 
-  <a class="link-4" href="#">EARPHONES</a>
-  <a class="link-4" href="#">SPEAKERS</a>
-  <a class="link-4" href="#">STORIES</a>
-  <a class="link-4" href="#">SUPPORT</a>
+  <a class="link-4" href="#para-two">ABOUT</a>
+  <a class="link-4" href="#sectionOne">ACTIVITIES</a>
+  <a class="link-4" href="#join">SOCIAL-MEDIA</a>
+  <a class="link-4" href="#section-1">CONTACT</a>
   
                 </nav>
 

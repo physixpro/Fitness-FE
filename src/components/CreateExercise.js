@@ -81,27 +81,32 @@ this.onSubmit = this.onSubmit.bind(this);
                    <div className="form-group">
                        
                   <img id="couple" src={couple} alt="couple walking on beach" width="1325" height="560"/>
-                       <h1 id="form-header">We Would Like To Know A little About Your Vacation</h1>
-                       <label id="questionOne">Is This A Family Vacation Or Solo Trip? </label>
+                       <h1 id="form-header">We Would Like To Know A Little Bit<br /> About Your Vacation</h1>
+                       <label id="questionOne">Is This A Family Vacation Or Solo Trip?
                        <input type="text"
                        required
+                       placeholder="Family / Solo"
                        className="form-control"
                        value={this.state.description}
                        onChange={this.onChangeDescription}
                        />
+                        </label>
+                      
                    </div>
                    <div className="form-group">
                        
-                       <label id="questionTwo">How Many Days Are You Staying For?</label>
+                       <label id="questionTwo">How Many Days Are You Staying For?
                        <input 
                        type="text"
                        className="form-controller"
                        value={this.state.duration}
                        onChange={this.onChangeDuration}
                        />
+                       </label>
+                       
                    </div>
-                   <div className="form-group">
-                       <input type="submit" value="Submit Details" className="btn"/>
+                  <div className="form-group">
+                       <input type="submit" value="SUBMIT" className="btn"/>
                    </div>
 
                   

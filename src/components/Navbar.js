@@ -11,10 +11,10 @@ class NavBar extends Component{
 
 
 <nav id="nav-3">
-  <a class="link-3" href="#">HEADPHONES</a>
-  <a class="link-3" href="#">EARPHONES</a>
-  <a class="link-3" href="#">SPEAKERS</a>
-  <a class="link-3" href="#">STORIES</a>
+  <a class="link-3" href="#">ABOUT</a>
+  <a class="link-3" href="#">SOCIAL-MEDIA</a>
+  <a class="link-3" href="#">ACTIVITIES</a>
+  
  
 </nav>
 </div>
