@@ -355,52 +355,45 @@ letter-spacing: 6px;
 /********************* Form-Grid **************/
 
 .form-group{
-position: relative;
-  
+ 
 }
 #form-header{
-  position: relative;
-  bottom:17em;
-  right:21em;
-  text-align: center;
-  
+  background-color: darkolivegreen;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(50px,1fr) );
+  grid-template-rows: 50px 150px auto 150px 150px;
+ font-size: 20px;
+ padding-left: 30px;
 }
 
 #questionOne{
-  position: relative;
- bottom:20em;
- left:2em;
- font-size: 20px;
- letter-spacing: 4px;
- 
+  background-color: pink;
+  grid-column: 2;
+  grid-row: 3/5;
+  font-size:27px;
 }
 .form-control{
-  position: relative;
-  right:26em;
-  top:3em;
+  background-color: red;
+ font-size: 20px;
+ 
 }
 
 #questionTwo{
-  position: relative;
-  bottom:15em;
-  left:4em;
-  font-size: 20px;
-  letter-spacing: 4px;
-  
+  background-color: yellow;
+ grid-row:3/5;
+ font-size: 27px;
 }
 
 .form-controller{
-  position: relative;
-  top:3em;
-  right:27em;
+  background-color: blue;
+  font-size: 20px;
 }
 
 .btn{
-  position: relative;
-  bottom: 12em;
-  left:13em;
-  font-size: large;
-  padding: 5px;
+  background-color: cyan;
+  grid-row:5/5;
+  grid-column: 2/1;
+ 
 }
 .social-media-grid{
   display:grid;

@@ -76,13 +76,13 @@ this.onSubmit = this.onSubmit.bind(this);
         return(
            
                
-               <form onSubmit={this.onSubmit}>
-                  
-                   <div className="form-group">
-                       
-                  <img id="couple" src={couple} alt="couple walking on beach" width="1325" height="560"/>
-                       <h1 id="form-header">We Would Like To Know A Little Bit<br /> About Your Vacation</h1>
-                       <label id="questionOne">Is This A Family Vacation Or Solo Trip?
+             <div className="form-group">  
+
+                 <form onSubmit={this.onSubmit}>
+                    
+                 <h1 className='heading'id="form-header"> 
+                 <h1 id="header">We Would Like To Know A Little Bit<br /> About Your Vacation</h1>
+                 <label id="questionOne">Is This A Family Vacation Or Solo Trip?
                        <input type="text"
                        required
                        placeholder="Family / Solo"
@@ -91,10 +91,8 @@ this.onSubmit = this.onSubmit.bind(this);
                        onChange={this.onChangeDescription}
                        />
                         </label>
-                      
-                   </div>
-                   <div className="form-group">
-                       
+                    
+                   
                        <label id="questionTwo">How Many Days Are You Staying For?
                        <input 
                        type="text"
@@ -103,15 +101,14 @@ this.onSubmit = this.onSubmit.bind(this);
                        onChange={this.onChangeDuration}
                        />
                        </label>
-                       
-                   </div>
-                  <div className="form-group">
-                       <input type="submit" value="SUBMIT" className="btn"/>
-                   </div>
-
+                      
+                      
+         
                   
+                       <input type="submit" value="SUBMIT" className="btn"/>
+                  </h1>
                </form>
-
+</div>
               
             
         )
