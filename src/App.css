@@ -358,41 +358,33 @@ letter-spacing: 6px;
  
 }
 #form-header{
-  background-color: darkolivegreen;
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(50px,1fr) );
-  grid-template-rows: 50px 150px auto 150px 150px;
- font-size: 20px;
- padding-left: 30px;
+position: relative;
+text-align: center;
+left: 1em;
+font-size: 20px;
 }
 
 #questionOne{
-  background-color: pink;
-  grid-column: 2;
-  grid-row: 3/5;
-  font-size:27px;
+position: relative;
+top:2em;
 }
 .form-control{
-  background-color: red;
- font-size: 20px;
  
 }
 
 #questionTwo{
-  background-color: yellow;
- grid-row:3/5;
- font-size: 27px;
+  position: relative;
+  top:2em;
 }
 
 .form-controller{
-  background-color: blue;
-  font-size: 20px;
+ 
 }
 
 .btn{
-  background-color: cyan;
-  grid-row:5/5;
-  grid-column: 2/1;
+  position: relative;
+left:4em;
+top:3em;
  
 }
 .social-media-grid{
