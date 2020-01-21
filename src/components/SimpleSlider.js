@@ -36,6 +36,7 @@ export default class SimpleSlider extends React.Component{
                   
                 </div>
               </h3>
+              
             </div>
             <div>
               <h3>
@@ -92,7 +93,9 @@ export default class SimpleSlider extends React.Component{
 
               </div>
               </h3>
+            
             </div>
+            
           </Slider>
         );
       }
